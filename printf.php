@@ -16,3 +16,5 @@ echo PHP_EOL;
 printf("The Octal equivalent of %d is %x",200000,200000);
 echo PHP_EOL;
 printf("The Octal equivalent of %d is %X",200000,200000);
+echo "\n";
+echo "We love PHP";
