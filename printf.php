@@ -18,3 +18,8 @@ echo PHP_EOL;
 printf("The Octal equivalent of %d is %X",200000,200000);
 echo "\n";
 echo "We love PHP";
+echo "\n";
+
+$n=3;
+$result =(($n=10)?"Ten":($n=20))?"Twenty":"A Number";
+echo $result;
