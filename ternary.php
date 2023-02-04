@@ -8,9 +8,9 @@
 // echo $result;
 // ternary
 
-$x="70";
-$output=($x>=100)?(($x>=500)?("bd"):("outside bd")):(($x<50)?("native elien"):("cross platform elien"));
-echo $output;
+// $x="70";
+// $output=($x>=100)?(($x>=500)?("bd"):("outside bd")):(($x<50)?("native elien"):("cross platform elien"));
+// echo $output;
 
 
 // $number =200;
@@ -40,3 +40,6 @@ echo $output;
 // ($x>20)?($z="Greater"):($z="Smaller");
 // $z="The value is ".(($x>20)?"Greater":"Smaller");
 // echo $z;
+
+
+
