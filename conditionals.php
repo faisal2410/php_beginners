@@ -6,7 +6,7 @@
  * ternary
  * nested ternary
  * switch
- * */ 
+ * */
 
 // if....else
 // $age = 15;
@@ -16,15 +16,11 @@
 // else
 // echo "Your are below 18";
 
-
-
-
 // $color ="blue";
 // if($color == 'blue')
 // print "Color is : blue";
 // else
 // print "Color is: not blue";
-
 
 // if...elseif...else
 // $color ="green";
@@ -40,12 +36,10 @@
 // else
 // print "Color is undefined!";
 
-
-
 // switch
 $color = "yellow";
 
-switch ($color){
+switch ($color) {
     case "blue":
         echo "This color is blue";
         break;
@@ -56,8 +50,5 @@ switch ($color){
         echo "This color is green";
         break;
     default:
-        print "Not specific color found!";     
+        print "Not specific color found!";
 }
-
-
-

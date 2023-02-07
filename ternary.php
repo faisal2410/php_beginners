@@ -42,4 +42,27 @@
 // echo $z;
 
 
+// $number=100;
+
+// $output=($number>=100)?(($number>=500)?(($number>=1000)?("grater than  1000"):("grater than 500 but less than 1000")):("Less than 500 but grater than 100")):("less than 100");
+// echo $output;
+
+// $result=()?(()?(()?(()?():()):()):()):(()?():())
+$a=50;
+$x=$a/2;
+$y=-10;
+$output=($x>0 && $y>0)?("Passed"):("Fail");
+echo $output;
+
+// $number=-300;
+// $result=($number>=500)?(($number>=2000)?(($number>=50000)?(($number>=100000)?("grater than 100000"):("grater than 50000 less than 100000")):("grater than 2000 but less than 50000")):("grater than 500 but less than 2000")):(($number>=0)?("Grater than 0 but less than 500"):("Negative number"));
+
+// echo $result;
+
+// $age=18;
+// $voterId=($age>=18)?("Elligible"):("NE");
+// echo $voterId;
+$age=10;
+
+$citizenStatus=($age>=18)?(($age>=50)?("SC"):("NC")):(($age>=10)?("Adollcent"):("Baby"));
 
