@@ -7,3 +7,4 @@ An array in PHP is a data structure that can store multiple values in a single v
 $fruits = array( "apple", "banana", "cherry" );
 
 $numbers=array(1,2,20,50);
+print_r($fruits);
