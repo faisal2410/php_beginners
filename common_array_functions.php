@@ -22,9 +22,51 @@ asort()
 ksort()
 usort()
 array_reverse()
+*/ 
+// ========================================================xxxxxxxxxxxx=======================
+// Brief description of most commonly used array functions :
+// =========================================================
+/*
+array(): This function is used to create an array. It is a basic function that initializes an array with the specified elements.
 
+array_merge(): This function is used to merge two or more arrays into a single array. It combines the arrays in the order they are listed in the function call.
+
+array_push(): This function adds one or more elements to the end of an array. It modifies the original array and returns the new number of elements in the array.
+
+array_pop(): This function removes and returns the last element from an array. It modifies the original array.
+
+array_shift(): This function removes and returns the first element from an array. It modifies the original array.
+
+array_unshift(): This function adds one or more elements to the beginning of an array. It modifies the original array and returns the new number of elements in the array.
+
+array_slice(): This function returns a subset of an array. It takes a portion of the original array and returns a new array with those elements.
+
+array_splice(): This function can be used to add or remove elements from an array. It modifies the original array and returns the elements that were removed.
+
+array_key_exists(): This function checks if a specified key exists in an array. It returns a boolean value.
+
+in_array(): This function checks if a specified value exists in an array. It returns a boolean value.
+
+array_search(): This function searches an array for a specified value and returns the corresponding key if found. If the value is not found, it returns false.
+
+array_unique(): This function removes duplicate values from an array and returns a new array with only the unique values.
+
+array_flip(): This function exchanges all keys with their associated values in an array.
+
+array_values(): This function returns all the values of an array and discards the keys.
+
+array_keys(): This function returns all the keys of an array or a subset of the keys.
+
+array_walk(): This function applies a user-defined function to each element of an array.
+
+array_map(): This function applies a user-defined function to each element of an array and returns a new array with the modified values.
+
+array_reduce(): This function applies a user-defined function to each element of an array and returns a single value.
 
 */ 
+
+// Details explanation with code example :
+// =======================================
 
 // 1.array_key_exists: This function checks if a specified key exists in an array.
 
@@ -171,6 +213,7 @@ array_reverse()
 // rsort($fruits);
 
 // print_r($fruits);
+
 // ============================
 
 //15. usort: This function sorts an array using a user-defined comparison function.
@@ -264,7 +307,10 @@ In this example, the isPositive function is defined to take a value as an argume
 
 */ 
 
-
+/*
+Example 1
+=============
+*/ 
 
 // function isPositive( $value ) {
 //     return $value >= 0;
@@ -280,18 +326,18 @@ In this example, the isPositive function is defined to take a value as an argume
 // array_keys(): This function returns an array of all the keys in an associative array. The resulting array will have integer or string indices, depending on the type of keys in the original array.
 
 
-$fruits = array("apple"=>"red", "banana"=>"yellow", "grape"=>"purple");
-$keys = array_keys($fruits);
-print_r($keys);
+// $fruits = array("apple"=>"red", "banana"=>"yellow", "grape"=>"purple");
+// $keys = array_keys($fruits);
+// print_r($keys);
 
 // Output: Array ( [0] => apple [1] => banana [2] => grape )
 
 
 // array_values(): This function returns an array of all the values in an associative array. The values will be stored in a numerically indexed array.
 
-$fruits = array("apple"=>"red", "banana"=>"yellow", "grape"=>"purple");
-$values = array_values($fruits);
-print_r($values);
+// $fruits = array("apple"=>"red", "banana"=>"yellow", "grape"=>"purple");
+// $values = array_values($fruits);
+// print_r($values);
 // Output: Array ( [0] => red [1] => yellow [2] => purple )
 
 
@@ -299,25 +345,25 @@ print_r($values);
 // array_sum(): This function calculates the sum of values in an array. It takes an array as input and returns the sum of all its elements.
 
 
-$numbers = array(1, 2, 3, 4, 5);
-$sum = array_sum($numbers);
-echo $sum;
+// $numbers = array(1, 2, 3, 4, 5);
+// $sum = array_sum($numbers);
+// echo $sum;
 
 // Output: 15
 // array_product(): This function calculates the product of values in an array. It takes an array as input and returns the product of all its elements.
 
 
-$numbers = array(1, 2, 3, 4, 5);
-$product = array_product($numbers);
-echo $product;
+// $numbers = array(1, 2, 3, 4, 5);
+// $product = array_product($numbers);
+// echo $product;
 
 // Output: 120
 // array_count_values(): This function returns an associative array, where the keys are the values in the original array, and the values are the number of times that value appears in the original array.
 
 
-$fruits = array("apple", "banana", "grape", "apple", "banana");
-$count = array_count_values($fruits);
-print_r($count);
+// $fruits = array("apple", "banana", "grape", "apple", "banana");
+// $count = array_count_values($fruits);
+// print_r($count);
 
 // Output: Array ( [apple] => 2 [banana] => 2 [grape] => 1 )
 
@@ -327,31 +373,34 @@ print_r($count);
 // In this example, array_reduce iterates over the $numbers array, and the callback function adds the current value to the accumulator. The final result is the sum of all elements in the $numbers array.
 
 
-$numbers = array(1, 2, 3, 4, 5);
-$sum = array_reduce($numbers, function($accumulator, $current) {
-  return $accumulator + $current;
-});
-echo $sum;
+// $numbers = array(1, 2, 3, 4, 5);
+// $sum = array_reduce($numbers, function($accumulator, $current) {
+//   return $accumulator + $current;
+// });
+// echo $sum;
 
 // Output: 15
 
-
+// ==================================
 
 
 // array_splice(): This function removes elements from an array and can also add new elements. It takes the following arguments: the input array, the starting offset, the number of elements to be removed, and optionally, the elements to be added.
 
 
-$fruits = array("apple", "banana", "grape", "kiwi", "mango");
-array_splice($fruits, 2, 2, array("orange", "lemon"));
-print_r($fruits);
+// $fruits = array("apple", "banana", "grape", "kiwi", "mango");
+// array_splice($fruits, 2, 2, array("orange", "lemon"));
+// print_r($fruits);
 
 // Output: Array ( [0] => apple [1] => banana [2] => orange [3] => lemon [4] => mango )
+
+// ==========================================
+
 // array_unique(): This function removes duplicate values from an array. The resulting array will contain only unique values, and the keys will be reindexed.
 
 
-$fruits = array("apple", "banana", "grape", "apple", "banana");
-$unique = array_unique($fruits);
-print_r($unique);
+// $fruits = array("apple", "banana", "grape", "apple", "banana");
+// $unique = array_unique($fruits);
+// print_r($unique);
 
 // Output: Array ( [0] => apple [1] => banana [2] => grape )
 
@@ -359,9 +408,9 @@ print_r($unique);
 // asort(): This function sorts an associative array in ascending order, based on the values. The keys are preserved, but the order of the elements is changed.
 
 
-$fruits = array("apple"=>"red", "banana"=>"yellow", "grape"=>"purple");
-asort($fruits);
-print_r($fruits);
+// $fruits = array("apple"=>"red", "banana"=>"yellow", "grape"=>"purple");
+// asort($fruits);
+// print_r($fruits);
 
 // Output: Array ( [apple] => red [banana] => yellow [grape] => purple )
 
@@ -369,17 +418,19 @@ print_r($fruits);
 // ksort(): This function sorts an associative array in ascending order, based on the keys. The values are preserved, but the order of the elements is changed.
 
 
-$fruits = array("apple"=>"red", "banana"=>"yellow", "grape"=>"purple");
-ksort($fruits);
-print_r($fruits);
+// $fruits = array("apple"=>"red", "banana"=>"yellow", "grape"=>"purple");
+// ksort($fruits);
+// print_r($fruits);
 
 // Output: Array ( [apple] => red [banana] => yellow [grape] => purple )
+
+// ============================
 
 // array_reverse(): This function reverses the order of elements in an array. The keys are preserved, but the order of the elements is changed.
 
 
-$fruits = array("apple", "banana", "grape");
-$reversed = array_reverse($fruits);
-print_r($reversed);
+// $fruits = array("apple", "banana", "grape");
+// $reversed = array_reverse($fruits);
+// print_r($reversed);
 
 // Output: Array ( [0] => grape [1] => banana [2] => apple )
