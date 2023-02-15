@@ -177,6 +177,8 @@ echo htmlentities($string);
 $string = "&lt;p&gt;Hello, World!&lt;/p&gt;";
 echo html_entity_decode($string);
 // Output: <p>Hello, World!</p>
+
+
 // strip_tags: This function removes HTML and PHP tags from a string.
 
 $string = "<p>Hello, World!</p>";
