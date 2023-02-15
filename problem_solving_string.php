@@ -5,6 +5,7 @@
 //     $vowels = ['a', 'e', 'i', 'o', 'u'];
 //     $count = 0;
 //     $string = strtolower( $string );
+
 //     for ( $i = 0; $i < strlen( $string ); $i++ ) {
 //         if ( in_array( substr( $string, $i, 1 ), $vowels ) ) {
 //             $count++;
@@ -12,7 +13,7 @@
 //     }
 //     return $count;
 // }
-// echo count_vowels("bangladesh is my mother land");
+// echo count_vowels("Bangladesh is my mother land");
 
 
 // Write a function that takes a string as input and returns the string with all vowels replaced by the character "x". Use the str_replace() and strtolower() functions to process the string.
@@ -118,6 +119,8 @@
 
 // echo capitalize_words("bangladesh is my motherland");
 
+// Homework
+
 // Write a function that takes two strings as input and returns a new string that is the result of alternating the characters of the two input strings.
 
 // function alternate_strings($string1, $string2) {
@@ -149,7 +152,7 @@
 //     return trim($result);
 // }
 
-// echo ascii_string("bangladesh");
+// echo ascii_string("ফয়সল আহমদ");
 
 
 
