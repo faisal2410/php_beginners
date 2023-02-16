@@ -2,7 +2,6 @@
 
 /*
 Math functions are a category of built-in functions in PHP that allow you to perform mathematical operations in your code. These functions can be used to perform various calculations such as finding the absolute value, rounding numbers, finding the minimum or maximum of a set of numbers, performing exponential and logarithmic operations, generating random numbers, and more.
-
 */ 
 /*
 Commonly used math functions in PHP:
@@ -174,3 +173,19 @@ $arcsine = asin($value);
 echo $arcsine; // Outputs 1.5707963267949...
 
 
+var_dump( round( 3.4 ) );
+var_dump( round( 3.5 ) );
+var_dump( round( 3.6 ) );
+var_dump( round( 3.6, 0 ) );
+var_dump( round( 5.045, 2 ) );
+var_dump( round( 5.055, 2 ) );
+var_dump( round( 345, -2 ) );
+var_dump( round( 345, -3 ) );
+var_dump( round( 678, -2 ) );
+var_dump( round( 678, -3 ) );
+
+// echo PHP_EOL;
+// $num = 5.6;
+// $floor_num = floor( $num );
+
+// echo $floor_num; // Outputs 5
