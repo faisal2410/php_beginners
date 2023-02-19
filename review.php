@@ -92,15 +92,18 @@ $numbers = array(1, 2, 3, 4, 5);
 //2. array_pop(): This function is used to remove the last element from an array.
 // Use Case: Removing the last element from an array.
 
-// $fruits = array("apple", "banana", "cherry");
+// $fruits = array("apple", "banana", "cherry",array(1,"jack fruit"));
 // $last_fruit = array_pop($fruits);
-// echo $last_fruit;
+// // print_r($last_fruit) ;
+// var_dump($last_fruit);
+// echo PHP_EOL;
+// print_r($fruits);
 
 
 //3. array_shift(): This function is used to remove the first element from an array.
 // Use Case: Removing the first element from an array.
 
-// $names = array("John", "Mary", "Peter");
+// $names = array(1, "Mary", "Peter");
 // $first_name = array_shift($names);
 // echo $first_name;
 
@@ -108,7 +111,7 @@ $numbers = array(1, 2, 3, 4, 5);
 // Use Case: Adding an element to the beginning of an array.
 
 // $cars = array("Toyota", "Honda", "Ford");
-// array_unshift($cars, "Chevrolet");
+// array_unshift($cars, "Chevrolet","telagari");
 // print_r($cars);
 
 
@@ -116,7 +119,7 @@ $numbers = array(1, 2, 3, 4, 5);
 // Use Case: Extracting a slice of an array.
 
 // $letters = array("A", "B", "C", "D", "E");
-// $slice = array_slice($letters, 2, 3);
+// $slice = array_slice($letters, 0,1);
 // print_r($slice);
 
 //5. array_merge(): This function is used to merge two or more arrays into a single array.
@@ -125,7 +128,7 @@ $numbers = array(1, 2, 3, 4, 5);
 // $fruits1 = array("apple", "banana", "cherry");
 
 // $fruits2 = array("orange", "kiwi", "mango");
-// $all_fruits = array_merge($fruits1, $fruits2);
+// $all_fruits = array_merge($fruits2, $fruits1);
 // print_r($all_fruits);
 
 
@@ -145,7 +148,7 @@ $numbers = array(1, 2, 3, 4, 5);
 // Use Case: Finding the position of a substring in a string.
 
 // $string = "The quick brown fox jumps over the lazy dog";
-// $position = strpos($string, "fox");
+// $position = strpos($string, "faisal");
 // echo $position;
 
 //3. str_replace(): This function is used to replace all occurrences of a substring in a string with another substring.
@@ -181,7 +184,7 @@ $numbers = array(1, 2, 3, 4, 5);
 // Use Case: Splitting a string into an array of characters.
 
 // $string = "Hello, world!";
-// $characters = str_split($string);
+// $characters = str_split($string,2);
 // print_r($characters);
 
 
@@ -216,10 +219,10 @@ $numbers = array(1, 2, 3, 4, 5);
 //5. date_diff(): This function is used to calculate the difference between two dates.
 // Use Case: Calculating the difference between two dates.
 
-// $date1 = new DateTime('2022-02-18');
-// $date2 = new DateTime('2023-02-14');
-// $interval = date_diff($date1, $date2);
-// print_r($interval);
+$date1 = new DateTime('2000-02-18');
+$date2 = new DateTime('2023-02-18');
+$interval = date_diff($date1, $date2);
+print_r($interval);
 
 
 // Essential Math Functions
@@ -228,44 +231,44 @@ $numbers = array(1, 2, 3, 4, 5);
 //1. abs(): This function is used to get the absolute value of a number.
 // Use Case: Getting the absolute value of a number.
 
-// $num = -10;
-// $abs = abs($num);
-// echo $abs;
+$num = -10;
+$abs = abs($num);
+echo $abs;
 
 // 2.sqrt(): This function is used to get the square root of a number.
 // Use Case: Getting the square root of a number.
 
-// $num = 25;
-// $sqrt = sqrt($num);
-// echo $sqrt;
+$num = 25;
+$sqrt = sqrt($num);
+echo $sqrt;
 
 //3. pow(): This function is used to raise a number to a specified power.
 // Use Case: Raising a number to a specified power.
 
-// $num = 2;
-// $power = pow($num, 3); // Raise to the power of 3
-// echo $power;
+$num = 2;
+$power = pow($num, 3); // Raise to the power of 3
+echo $power;
 
 //4. rand(): This function is used to generate a random integer.
 // Use Case: Generating a random integer.
 
-// echo $random = rand(1, 10);
+echo $random = rand(1, 10);
 
 //5. max(): This function is used to get the maximum value from a set of numbers.
 // Use Case: Getting the maximum value from a set of numbers.
 
-// $num1 = 10;
-// $num2 = 20;
-// $num3 = 30;
-// $max = max($num1, $num2, $num3);
+$num1 = 10;
+$num2 = 20;
+$num3 = 30;
+$max = max($num1, $num2, $num3);
 
 //6. min(): This function is used to get the minimum value from a set of numbers.
 // Use Case: Getting the minimum value from a set of numbers.
 
-// $num1 = 10;
-// $num2 = 20;
-// $num3 = 30;
-// echo $min = min($num1, $num2, $num3);
+$num1 = 10;
+$num2 = 20;
+$num3 = 30;
+echo $min = min($num1, $num2, $num3);
 
 
 

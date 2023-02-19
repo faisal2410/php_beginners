@@ -76,7 +76,14 @@
  * Array Functions
  * String Functions
  * Date/Time Functions
- * Math Functions
- * 
- * 
+ * Math Functions 
  * */ 
+
+/**
+ * 19.02.2023
+ * super global variables
+ * search project for explaining super global variable get,post, request
+ * 
+ * 
+ * 
+ * */  
