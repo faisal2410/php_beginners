@@ -84,6 +84,27 @@
  * super global variables
  * search project for explaining super global variable get,post, request
  * 
+ * */ 
+
+/**
+ * 20.02.2023 
+ * Four Projects using super global variables:
+ * 1. Auth project
+ * 2.file submit project
+ * 3.form submit project
+ * 4.server client info * 
+ * */ 
+
+/**
+ * isset
+ * isempty
+ * header
+ * Three Projects:
+ * 1.string tool
+ * 2.random password generator
+ * 3.password generator
+ * 4.login
+ * 
  * 
  * 
  * */  

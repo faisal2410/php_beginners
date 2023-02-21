@@ -33,4 +33,27 @@ echo "<a href='$base_url/about'>About Us</a>";
 // In summary, $_ENV is a superglobal variable in PHP that is used to retrieve the values of environment variables that are set on the server where the PHP script is running. It is commonly used to store configuration values for a web application, such as database credentials, API keys, and application settings. However, because it is used to store sensitive data, it is important to use it carefully and protect the environment variables from unauthorized access.
 
 
+// In PHP, you can set an environment variable using the putenv() function. The putenv() function takes a string argument in the format of "name=value", where "name" is the name of the environment variable and "value" is its value. Here is an example of how to use putenv() to set an environment variable:
+
+putenv("MY_VAR=my_value");
+// This will set the environment variable "MY_VAR" to the value "my_value". You can then access this environment variable using the $_ENV superglobal array in your PHP code:
+
+
+echo $_ENV["MY_VAR"]; // Output: my_value
+
+// Note that environment variables set using putenv() will only be available to the current script and its child processes. To set an environment variable that is available system-wide, you will need to set it outside of your PHP code, such as in your server's configuration file or by using a command-line utility.
+
+
+// When you use the putenv() function in PHP, it sets an environment variable that is local to the PHP script and any child processes that it spawns. This means that the environment variable will only be available within the context of the script and will not be visible to other scripts or system-level processes.
+
+// To set an environment variable that is available system-wide, you will need to set it outside of your PHP code, such as in your server's configuration file or by using a command-line utility. For example, if you are running Apache as your web server, you can set environment variables in the Apache configuration file httpd.conf or in a .htaccess file. You can also set environment variables in the system-level environment using the set command in Windows or the export command in Linux and macOS.
+
+// Setting environment variables system-wide is useful for configuring your system and applications, and is often used to store configuration values that should not be hard-coded in your code. These can include things like database connection details, API keys, and other sensitive information that should be kept separate from your codebase. By setting environment variables system-wide, you can ensure that these values are available to all processes that need them, and can be updated without modifying your code.
+
+
+
+
+
+
+
 
