@@ -43,12 +43,12 @@ Overall, learning patterns using loops in PHP is an important step in becoming a
 // Pattern 2 (triangle with number)
 
 
-// for ( $i = 1; $i <= 5; $i++ ) {
-//     for ( $j = 1; $j <= $i; $j++ ) {
-//         echo " $i ";
-//     }
-//     echo "\n";
-// }
+for ( $i = 1; $i <= 5; $i++ ) {
+    for ( $j = 1; $j <= $i; $j++ ) {
+        echo " $i ";
+    }
+    echo "\n";
+}
 
 // Pattern 3
 
